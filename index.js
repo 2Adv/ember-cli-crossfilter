@@ -2,5 +2,20 @@
 'use strict';
 
 module.exports = {
-  name: 'ember-crossfilter-shim'
+  name: 'crossfilter',
+
+  isDevelopingAddon() {
+    return true;
+  },
+
+  included: function included(app) {
+    this._super.included(app);
+    debugger
+    app.import(app.bowerDirectory + '/crossfilter2/crossfilter.min.js');
+    app.import('vendor/crossfilter.js', {
+      exports: {
+        Crossfilter: ['default']
+      }
+    });
+  }
 };

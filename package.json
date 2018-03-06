@@ -6,19 +6,21 @@
     "ember-addon"
   ],
   "license": "MIT",
-  "author": "",
+  "author": "2ADV",
   "directories": {
     "doc": "doc",
     "test": "tests"
   },
   "repository": "",
   "scripts": {
+    "rp": "npm version patch && npm publish && git push --follow-tags",
     "build": "ember build",
     "start": "ember server",
     "test": "ember try:each"
   },
   "dependencies": {
-    "ember-cli-babel": "^5.1.7"
+    "ember-cli-babel": "^5.1.7",
+    "ember-cli-htmlbars": "^1.1.1"
   },
   "devDependencies": {
     "broccoli-asset-rev": "^2.4.5",
@@ -26,7 +28,6 @@
     "ember-cli": "2.12.2",
     "ember-cli-dependency-checker": "^1.3.0",
     "ember-cli-eslint": "^3.0.0",
-    "ember-cli-htmlbars": "^1.1.1",
     "ember-cli-htmlbars-inline-precompile": "^0.3.6",
     "ember-cli-inject-live-reload": "^1.4.1",
     "ember-cli-qunit": "^3.1.0",

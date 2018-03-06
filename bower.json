@@ -1,4 +1,6 @@
 {
   "name": "ember-crossfilter-shim",
-  "dependencies": {}
+  "dependencies": {
+    "crossfilter2": "^1.4.5"
+  }
 }
