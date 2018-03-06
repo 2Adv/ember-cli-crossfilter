@@ -5,7 +5,7 @@ module.exports = {
   name: 'crossfilter',
 
   isDevelopingAddon() {
-    return true;
+    return false;
   },
 
   included: function included(app) {
